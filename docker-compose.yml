@@ -3,8 +3,6 @@ services:
   app:
     image: vue2-docker
     build:
-      context: .
-      dockerfile: Dockerfile
       target: deploy
     ports:
-      - 8080:80
+      - 5173:80

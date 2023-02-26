@@ -1,14 +1,8 @@
-serve:
-	pnpm run serve
+dev:
+	pnpm run dev
 
 build:
 	pnpm run build
 
-docker-build:
-	docker-compose build
-
-docker-up:
-	docker-compose up
-
-docker-serve:
+deploy:
 	docker-compose up --build	
