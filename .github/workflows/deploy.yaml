@@ -28,10 +28,5 @@ jobs:
       - name: Build
         run: |
           pnpm build
-          touch ./dist/.nojekyll
 
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.8.0
-        with:
-          branch: gh-pages
-          folder: dist
+
