@@ -2,11 +2,12 @@
   "name": "vue2-docker",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint --ext .ts,.js,.vue --ignore-path .gitignore --fix src"
+    "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
     "vue": "2.7.16"
@@ -15,21 +16,8 @@
     "@types/node": "^25.0.3",
     "@vitejs/plugin-vue2": "^2.2.0",
     "eslint": "^9.0.0",
+    "eslint-plugin-vue": "^10.6.2",
     "vite": "^7.0.0"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "ecmaVersion": 2020
-    },
-    "rules": {}
   },
   "browserslist": [
     "> 1%",
