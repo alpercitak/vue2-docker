@@ -1,12 +1,17 @@
-name: Build & Deploy
+name: build
 
 on:
   push:
     branches:
       - "**"
 
+  pull_request:
+    branches:
+      - '**'      
+
 jobs:
-  deployment:
+  build:
+    timeout-minutes: 15
     runs-on: ubuntu-latest
 
     steps:
